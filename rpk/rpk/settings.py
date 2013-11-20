@@ -56,12 +56,12 @@ WSGI_APPLICATION = 'rpk.wsgi.application'
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'sqlserver_ado',
-        'NAME': 'accountdb',
-	'USER': 'sa',
-	'PASSWORD': 'admin123',
-	'HOST': r'RPK\SQLEXPRESS',
+	'default': {
+		'ENGINE': 'sqlserver_ado',
+		'NAME': 'accountdb',
+		'USER': 'sa',
+		'PASSWORD': 'admin123',
+		'HOST': r'RPK\SQLEXPRESS',
     }
 }
 
@@ -81,5 +81,13 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
+
+TEMPLATE_DIRS = (
+	os.path.join(BASE_DIR, 'templates'),
+)
+
+STATICFILES_DIRS = (
+	os.path.join(BASE_DIR, 'static'),
+)
 
 STATIC_URL = '/static/'
