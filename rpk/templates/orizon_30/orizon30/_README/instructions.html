@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+
+<link rel="stylesheet" href="style.css" media="all">
+
+<title>Orizon - The Gaming Template WP version</title>
+<style>
+body {
+  color: #222;
+  font: 12px/20px Helvetica, Arial, sans-serif;
+}
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin-bottom: 20px;
+}
+#nav {
+  left: 20px;
+  list-style: none;
+  position: fixed;
+  top: 20px;
+}
+#nav li {
+  margin-bottom: 2px;
+}
+#nav a {
+  background: #ededed;
+  color: #666;
+  display: block;
+  font-size: 11px;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#nav a:hover {
+  background: #dedede;
+}
+#nav .current a {
+  background: #666;
+  color: #ededed;
+}
+.current {
+  background: red;
+}
+#container {
+  margin: 0 auto;
+  width: 800px;
+}
+.div {
+  border-bottom: 5px solid #ccc;
+  padding: 20px;
+}
+.div p:last-child {
+  margin-bottom: 0;
+}
+</style>
+</head>
+
+<body>
+
+
+<div id="sidebar">
+  <ul id="navigation">
+    <li><a class="nav-tab" href="#documenter_cover">Welcome</a></li>
+    <li><a class="nav-tab" href="#installation">Installation</a></li>
+    <li><a class="nav-tab" href="#customizing_theme">Customizing the theme</a></li>
+    <li><a class="nav-tab" href="#creatingpost">Creating a post</a></li>	
+    <li><a class="nav-tab" href="#widgets">Widgets</a></li>
+	<li><a class="nav-tab" href="#homepage">Homepage</a></li>
+    <li><a class="nav-tab" href="#menu">Menus</a></li>
+    <li><a class="nav-tab" href="#creatingpostlist">Creating a Post list</a></li>
+    <li><a class="nav-tab" href="#creatinggallery">Creating a Gallery</a></li>
+    <li><a class="nav-tab" href="#pagetypes">Other types of pages</a></li>
+	<li><a class="nav-tab" href="#important">Further Help</a></li>
+  </ul>
+</div>
+<div id="main_content">
+  <div id="documenter_cover">
+  
+  
+    <div id="header"></div>
+    
+    <ul>
+    	<li>
+       		Version: <strong>3.0 </strong>	
+        </li>
+        <li>
+        	Support: <strong><a href="http://support.skywarriorthemes.com" target="_blank">support.skywarriorthemes.com</a></strong>
+        </li>
+    </ul>
+    
+    <p>To view this template in its full beauty please use Chrome or Firefox. IE makes kittens cry and everybody loves kittens... right?</p>
+    
+  </div>
+  <div id="installation">
+  <h3>Installation - <a href="http://www.youtube.com/watch?v=S0tn05U5_to" target="_blank">Watch video</a></h3>
+ <p>To install this theme you must have a working version of WordPress already installed. For more info on how to install WordPress please see the WordPress Codex: <a href="http://codex.wordpress.org/Installing_WordPress">http://codex.wordpress.org/Installing_WordPress</a></p>
+
+		<p>Extract the zipped package downloaded from ThemeForest to your desktop, in the extracted package you will find the Orizon.zip file which is the WordPress theme.</p>
+
+		<p>You can install the theme in two ways:</p>
+		
+		<ul>
+			<li>
+				<p><strong>FTP:</strong> Extract Orizon.zip file and upload the extracted folder to the <strong>/wp-content/themes/</strong> folder on your server.</p>
+				</li>
+				<li><p><strong>WordPress:</strong> Navigate to the <strong>Appearance -> Add New Themes -> Upload</strong> page. Select the Orizon.zip file. Press the <strong>Install Now</strong> button to upload and install the theme.</p>
+			</li>
+		</ul>
+		
+		<p>After uploading the theme, you have to activate it. Navigate to the <strong>Appearance -> Themes</strong> page to activate the theme.</p>
+		<p>&nbsp; </p>
+	<p><strong>Changing the URL structure (optional but recommended)</strong></p>
+	<p>To change the URL structure so the URL looks more user-friendly (also is better for SEO) navigate to <strong>Settings -> Permalinks</strong> and under 'Common Settings' select 'Post name' or any other option EXCEPT default.</p>
+    
+		
+  </div>
+
+  <div id="customizing_theme">
+    <h3>Customizing the theme - <a href="http://www.youtube.com/watch?v=Z0skMGGDwvg" target="_blank">Watch video</a></h3>
+ 
+    <p> To customize the look and feel of Orizon you need to use the Theme Barracks panel (Theme Options):</p>
+	<img src="images/theme_option.jpg">
+    <p>&nbsp; </p>
+    <h2> General settings </h2>
+    <p>Inside the General Settings tab you will be able to customize the logo and favicon (small icon that appears in the browser tab) by uploading your own images:</p>
+    <p>&nbsp; </p>
+
+    <h2>Colours</h2>
+    <p>In this div you will be able to choose a body colour and a background for your theme. Currently there is no option to upload your own, but I have provided the .PSD and HTML files so you can change the images and overwrite them. There are a lot of tutorials on Youtube on how to use Photoshop and you can always use the 30 days trial if you don't already have it.</p>
+    
+    
+	 <p>&nbsp; </p>
+  </div>
+  <div id="creatingpost">
+    <h3>Creating a post  - <a href="http://www.youtube.com/watch?v=YXLe-B3Llcw" target="_blank">Watch video</a></h3>
+    <p>Aside from the general WordPress settings there are some important things that you have to consider when creating a post.</p>
+    <p> <strong>Categories</strong></p>
+    <p>The categories impact directly on different divs of the site, so choose wisely which categories you are going to add to the post.</p>
+    <img src="images/categories.jpg">
+    <p> <strong>Featured image</strong></p>
+    <p>On the bottom right corner you will find a link called "Set featured image". This will allow you to upload and set a image for the post.</p>
+    <img src="images/feature_image.jpg">
+    <p><strong>NEW in version 3.0: Add custom image for the post</strong></p>
+    <p>We have added an option to add an custom image for the post to make it look nicer on the site. Basically now you will have 2 images: One that is the whole website and one for the post itself. To add a custom image for the post please follow these steps:
+    	<ul>
+    		<li>Upload your modified image in media</li>
+    		<li>Copy the direct link of the image</li>
+    		<li>In the post, scroll down to custom fields</li>
+    		<li>On the dropdown, select "inner-post-image"</li>
+    		<li>On the value field, paste your image link (please include http://)</li>
+    		<li>Click on Add custom field button on the left hand side and update the post</li>
+    	</ul></p>
+    <p> <strong>Review Info</strong></p>
+    <p>Underneath the main text are you will be able to find the Review Info div. If you decide that you would like to create a review (for instance, rating a game or movie) rather than a normal post, you can set up different criteria/scoring for it. To reset to a normal post simply delete all the fields leaving them blank.  </p>
+    <img src="images/review_info.jpg">
+    <p>&nbsp; </p>
+  </div>
+  <div id="widgets">
+    <h3>Widgets - <a href="http://www.youtube.com/watch?v=Z0skMGGDwvg" target="_blank">Watch video</a></h3>
+ 
+    <p>This template supports two widget sidebards: right side and footer. </br>
+	In both sidebars all the widgets are fully styled, with the exception of the search widget.<strong> Please delete the search widget if you haven't done it already. Because this template already has an integrated search, the default search widget from WordPress hasn't been styled and it may cause some trouble.</strong></p>
+	
+	<p>Adding widgets is very easy, just head to 'Appearance' and then 'Widgets'.</p>
+	<img src="images/widgets.jpg">
+	<p>Here you will be able to drag and drop the widgets that you want in one of the two sidebars. <strong>I would suggest having only one widget in the footer sidebar, as more than one would cause the footer to look too big.</strong></p>
+    <p>&nbsp; </p>
+  </div>
+  <div id="homepage">
+    <h3>Homepage  - <a href="http://www.youtube.com/watch?v=KSy_GAUWdwo" target="_blank">Watch video</a></h3>
+    <p> The homepage is divided into different sections:</p>
+    <h2>Slider</h2>
+    <p>The slider is the top rotating banner and the most important part of the homepage since it displays the most important news to visitors.</p>
+    <p>You have different options for the customization of the sliders, and this can be accessed by clicking on the Slider tab inside Theme Barracks:</p>
+    <img src="images/slider.jpg">
+    <p>&nbsp; </p>
+    <h2>Carousel and General News</h2>
+    <p>'Carousel' refers to the rotating posts underneath the Slider and 'General News' to the posts underneath the carousel. </p>
+    <p>By accessing the Homepage tab you will be able to change different aspects of these two elements:</p>
+    <img src="images/carousel.jpg">
+    <p>&nbsp; </p>
+  </div>
+  <div id="menu">
+    <h3>Menus  - <a href="http://www.youtube.com/watch?v=oO5fi2z_AKQ" target="_blank">Watch video</a></h3>
+    <p>Orizon supports one custom WordPress menu with a one level dropdown. If you add more than one level it will still work, but not look quite as good.</p>
+  	<p>To create the menu, navigate to Appearance -> Menus page. Enter a name for your menu and add links to the menu by using the options given on the left sidebar. You can manage your menus using the drag and drop functionality. After setting up your menu, select the menu you just created from the theme locations dropdown box and hit the "Save" button.</p>
+	<img src="images/menu.jpg">
+    <p>&nbsp; </p>
+  </div>
+  <div id="creatingpostlist">
+    <h3>Creating a post list (category page)  - <a href="http://www.youtube.com/watch?v=kLq93eJ1Zt0" target="_blank">Watch video</a></h3>
+    <p>To create a fully working post list (category page) please follow these steps:</p>
+    <ul>
+    	<li>Go to Pages and add a new one<br>
+        <img src="images/new_page.jpg"></li>
+        <li>After giving that new page a name you need to select the default template (it should be already selected as a default)</li>
+        <li>Copy the following code and paste it in the text area:
+        	<pre style="width: 300px;">&#91;post category_name="news" totalposts="5"&#93;</pre>
+        </li>
+        <li>Here you will need to modify the category, changing it to the one that you want your posts to display from. To do that simply replace 'News' with your category name. So if you category is called 'Fantasy' it will look like this:
+        <pre >&#91;post category_name="Fantasy" totalposts="5"&#93;</pre>
+        </li>
+        <li> 'totalposts' are the number of posts you want to show per page. After the number of posts that you selected is reached, it will create a pagination that allows you to access previous posts:<br>
+        <img src="images/pagination.jpg">
+        </li>
+    </ul>
+	<p><strong>Quicker and easier way</strong></p>
+	<p>As we saw in the previous tutorial there is a quicker way to create a category page. Basically just add a category to the menu, which will automatically add the page for you. The only difference between doing it manually is that you can select the number of posts that you want to show in the page since the automatic way only shows 5.</p>
+    <p>&nbsp; </p>
+  </div>
+  
+  <div id="creatinggallery">
+    <h3>Creating a gallery  - <a href="http://www.youtube.com/watch?v=VBEfu5LEE0I" target="_blank">Watch video</a></h3>
+    <p>Gallery creation is managed by the Gallery tab in the main WordPress admin panel under Theme Options: <br>
+		<img src="images/gallery.jpg"></p>
+    <ul>
+    	<li>First of all you will need to create a new gallery. You can do this by selecting 'Manage Gallery', clicking on 'Add New Gallery' on the top and giving it a name.</li>
+    	<li>Then you will need to add images to the gallery you just created. You can do this by clicking on 'Add Image' in the menu and uploading the images that you want.</li>
+    	<li>In 'Manage Gallery Images' you will be able to see which images are in which gallery and you will also be able to delete them.</li>
+    </ul>
+    <h2>Adding a gallery to a page</h2>
+    <p>Creating a gallery page is very similar to creating a post list, but uses a slightly different code:</p>
+    <ul>
+    	<li>Go to Pages and add a new one<br>
+        <img src="images/new_page.jpg"></li>
+        <li>After giving that new page a name <strong>you need to select gallery template</strong> (it should be already selected as a default)</li>
+        <li>Copy the following code and paste it in the text area:
+        	<pre style="width: 215px;">&#91;gallery id="1" showlimit="3"&#93;</pre>
+        </li>
+        <li>Here you will need to modify the id. The id corresponds to the gallery id that you want to use, you can find this in the Gallery tab under 'Manage gallery'</li>
+        <li>'showlimit' field is the number of images that you want to show per page. After the number of posts that you selected is reached, it will create a pagination which allows you to access other images:<br>
+        <img src="images/pagination.jpg">
+        </li>
+    </ul>
+	<p><strong>Footer gallery</strong></p>
+	<p>As I quickly commented in the widgets tutorials the footer contains a gallery (latest media). You can select which gallery to display in Theme Options -> Footer -> FOOTERS GALLERY CATEGORY.</p>
+    
+    <p>&nbsp; </p>
+  </div>
+  
+  <div id="pagetypes">
+    <h3>Other type of pages - <a href="http://www.youtube.com/watch?v=betBDXThksA" target="_blank">Watch video</a></h3>
+    <p>&nbsp; </p>
+    <h2>Full width</h2>
+    <p>This page has no sidebar, meaning that the content extends the whole width of the site.</p>
+    <p>You can create a full width page by selected 'Full page' under 'Template'.</p>
+    <img src="images/fullpage.jpg">
+    <p>&nbsp; </p>
+    <h2>Contact</h2>
+    <p>The contact page has a form that users can utilise to contact the email address of your choice. You can change the email and subject of the email in 'Theme Options' under the Contact tab.</p>
+    <p>To create a contact page select 'Contact' under 'Template'.</p>
+    <img src="images/contact.jpg">
+    <p>&nbsp; </p>
+    
+  </div>
+  
+  <div id="important">
+    <h3>Further help</h3>
+	<p>&nbsp; </p>
+    <h2>What I can help you with</h2>
+
+<p>I can help you with any questions about how the theme works and any bugs or errors you might find, for example:</p>
+ 
+ <ul>
+    	<li>Which file is some particular code in?</li>
+		<li>What can the theme do (or not do)? </li>
+		<li>Are there future updates and enhancements planned? </li>
+		<li>I found a bug/error!, etc.</li>
+</ul>
+    	
+
+</p>
+<h2>What I cannot help you with</h2>
+
+<p>Themeforest does not require authors to give support in any way shape or form, nor does your purchase of a ThemeForest
+ item come with any guarantee of support in any way. However, I still spend a great deal of time each week providing support to you guys because it's important to me
+ that you guys get a top-notch product and service.
+</p>
+<p>That said, it is not feasible for me time-wise to provide support beyond questions about how the theme works and fixing any bugs or errors. This includes:
+</p>
+ <ul>
+    	<li>Customizing the theme  </li>
+		<li>Adding or modifying the theme functionality </li>
+		<li>Teaching you how to use WordPress</li>
+		<li>Teaching you how to use Adobe Photoshop or any image editing programs</li>
+		<li>Support for external plugins.</li>
+</ul>
+
+
+
+<h2>Please do not abuse support</h2>
+
+<p>This support is provided completely free of charge. Please remember that a customized WordPress design would normally cost $1500-3000, and for $40-50 you are getting a bargain.
+For this reason, please do not expect me to tailor the theme to your individual needs, it is not physically possible to do this for each of you.</p>
+
+<p>That said, if you find any errors or bugs, don't hesitate to let me know via the support forum and I will try to get it fixed as soon as possible.
+At the end of the day, I hope you guys enjoy using this template! If you are happy with it, please don't forget to rate it on ThemeForest! (I will love you forever ^^) 
+</p><div id="footer">
+    More deliciously cool stuff at <a href="http://www.skywarriorthemes.com">http://www.skywarriorthemes.com</a>.
+    </div>
+</div>
+
+<script src="javascript/jquery.1.6.4.js"></script>
+<script src="javascript/jquery.scrollTo-1.4.2-min.js"></script>
+<script src="javascript/jquery.easing.js"></script>
+<script src="javascript/js_script.js"></script>
+<script>document.createElement('div');var duration=500,easing='easeInCubic';</script>
+
+
+</body>
+
+
+<script src="jquery.js"></script>
+<script src="jquery.scrollTo.js"></script>
+<script src="jquery.nav.min.js"></script>
+<script>
+$(document).ready(function() {
+  $('#navigation').onePageNav({
+    begin: function() {
+	  console.log('start')
+    },
+    end: function() {
+	  console.log('stop')
+    }
+  });
+  
+  $('.do').click(function(e) {
+    $('#div-4').append('<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>');
+    e.preventDefault();
+  });
+  
+});
+</script>
+
+</body>
+</html>
