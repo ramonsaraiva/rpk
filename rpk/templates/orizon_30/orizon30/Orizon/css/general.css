@@ -1,188 +1,0 @@
-/* =General CSS
--------------------------------------------------------------- */
-.alignnone {
-    margin: 5px 20px 20px 0;
-}
-
-.aligncenter,
-div.aligncenter {
-    display: block;
-    margin: 5px auto 5px auto;
-}
-
-.alignright {
-    float:right;
-    margin: 5px 0 20px 20px;
-}
-
-.alignleft {
-    float: left;
-    margin: 5px 20px 20px 0;
-}
-
-.aligncenter {
-    display: block;
-    margin: 5px auto 5px auto;
-}
-
-a img.alignright {
-    float: right;
-    margin: 5px 0 20px 20px;
-}
-
-a img.alignnone {
-    margin: 5px 20px 20px 0;
-}
-
-a img.alignleft {
-    float: left;
-    margin: 5px 20px 20px 0;
-}
-
-a img.aligncenter {
-    display: block;
-    margin-left: auto;
-    margin-right: auto
-}
-
-.wp-caption {
-    background: #fff;
-    border: 1px solid #f0f0f0;
-    max-width: 96%; /* Image does not overflow the content area */
-    padding: 5px 3px 10px;
-    text-align: center;
-}
-
-.wp-caption.alignnone {
-    margin: 5px 20px 20px 0;
-}
-
-.wp-caption.alignleft {
-    margin: 5px 20px 20px 0;
-}
-
-.wp-caption.alignright {
-    margin: 5px 0 20px 20px;
-}
-
-.wp-caption img {
-    border: 0 none;
-    height: auto;
-    margin: 0;
-    max-width: 98.5%;
-    padding: 0;
-    width: auto;
-}
-
-.wp-caption p.wp-caption-text {
-    font-size: 11px;
-    line-height: 17px;
-    margin: 0;
-    padding: 0 4px 5px;
-}
-
-.sticky
-{
-
-}
-.bypostauthor
-{
-	
-}
-
-.gallery .gallery-caption 
-{
-	font-size: 12px;
-	margin: 0 0 12px;
-}
-
-
-/* page with sidebar */
-
-#psidebar{
-	padding:0px 10px 10px 10px;
-}
-
-#psidebar h1, #psidebar h2, #psidebar h3, #psidebar h4, #psidebar h5, #psidebar h1, #psidebar h2, #psidebar h3, #psidebar h4, #psidebar h5{
-	width:auto !important;
-	float:none !important;
-}
-
-/* buddy */
-
-#buddywrap{
-	-moz-border-bottom-colors: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
-    background-attachment: scroll;
-    background-clip: border-box;
-    background-color: #FFFFFF;
-    background-image: none;
-    background-origin: padding-box;
-    background-position: 0 0;
-    background-repeat: repeat;
-    background-size: auto auto;
-    border-bottom-color: #461C0E;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-bottom-style: solid;
-    border-bottom-width: 3px;
-   	border-left-color: #461C0E;
-    border-left-style: solid;
-    border-left-width: 3px;
-    border-right-color: #461C0E;
-    border-right-style: solid;
-    border-right-width: 3px;
-    border-top-color: #461C0E;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-top-style: solid;
-    border-top-width: 3px;
-    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.5);
-    margin-bottom: 30px;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    position: relative;
-    width: 600px;
-    float: left;
-}
-
-/* wrapper */
-
-#body table{
-	margin:10px;
-}
-
-#body table tr td{
-	padding:10px;
-	border:1px solid #ccc;
-}
-
-
-/*buddy*/
-#forum-topic-form .fortop{
-	margin-top: -10px !important;
-	margin-bottom: 20px !important;
-} 
-#forum-topic-form #topic-post-list{
-	margin-right: 0px !important;
-	
-}
-#forum-topic-form #topic-meta h3{
-	margin-top: -23px;
-}
-
-/* post gallery */
-
-#body #l_media_list{
-	float:left;
-	width:100%;
-}
-#body #pager{
-	float:left !important;
-	clear:both;
-	width:100%;
-	padding:0 !important;
-}
