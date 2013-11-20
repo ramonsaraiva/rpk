@@ -56,13 +56,20 @@ WSGI_APPLICATION = 'rpk.wsgi.application'
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
 
 DATABASES = {
-	'default': {
+	'player': {
 		'ENGINE': 'sqlserver_ado',
 		'NAME': 'accountdb',
 		'USER': 'sa',
 		'PASSWORD': 'admin123',
 		'HOST': r'RPK\SQLEXPRESS',
-    }
+    },
+	'default': {
+		'ENGINE': 'django.db.backends.mysql',
+		'NAME': 'rpk',
+		'USER': 'root',
+		'PASSWORD': 'lsd25',
+		'HOST': '127.0.0.1',
+	}
 }
 
 # Internationalization
@@ -83,11 +90,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 TEMPLATE_DIRS = (
-	os.path.join(BASE_DIR, 'templates'),
+	os.path.join(BASE_DIR, 'templates/'),
 )
 
 STATICFILES_DIRS = (
-	os.path.join(BASE_DIR, 'static'),
+	os.path.join(BASE_DIR, 'static/'),
 )
 
 STATIC_URL = '/static/'
+STATIC_ROOT = 'C:/public_html/realitypk.com/static/'

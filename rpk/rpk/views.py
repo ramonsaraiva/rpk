@@ -6,4 +6,5 @@ class HomeView(TemplateView):
 
 class PlayerTest(ListView):
 	model = Player
+	queryset = Player.objects.using('player').all()
 	template_name = 'test.html'
