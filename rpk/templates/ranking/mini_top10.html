@@ -1,0 +1,16 @@
+{% load static %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+<div class="review">
+	<div class="header"><a href="#">Top 10 Arena</a></div>
+	<ul>
+		{% for char in chars %}
+		<li>
+		<div class="img"><a href="#"><img src="{{ STATIC_PREFIX }}images/classes/{{ char.char_class }}.png" /></a></div>
+		<div class="info"> <a href="#"><strong>{{ char.char }}</strong></a><br/>
+			<small>Level <strong>{{ char.level }}</strong></small><br/>
+			<small><strong>{{ char.bps }}</strong> BPS</small>
+		</li>
+		{% endfor %}
+	</ul>
+</div>

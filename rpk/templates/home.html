@@ -1,4 +1,5 @@
 {% extends 'base_splitted.html' %}
+{% load ranking_extras %}
 {% block slider %}
 <div id="da-slider" class="da-slider">
 	{% for news in slider_news %}
@@ -149,35 +150,7 @@
 	<input type="text" onblur="if(this.value =='') this.value='search'" onfocus="if (this.value == 'search') this.value=''" value="search" name="s" class="required" id="s" />
 	<input type="button" />
 </div>
-<div class="review">
-	<div class="header"><a href="#">Top games</a></div>
-	<ul>
-		<li>
-		<div class="img"><a href="./post_game.html"><img alt="alt_example" src="{{ STATIC_URL }}images/media/thumb/1.jpg" /></a></div>
-		<div class="info"> <a href="./post_game.html">Dead space 3</a><br/>
-			<small>05 December 2011, 2 Comments</small><br/>
-			<img alt="alt_example" src="{{ STATIC_URL }}images/stars.png" /> </div>
-		</li>
-		<li>
-		<div class="img"><a href="./post_game.html"><img alt="alt_example" src="{{ STATIC_URL }}images/media/thumb/1.jpg" /></a></div>
-		<div class="info"> <a href="./post_game.html">Battlefield 3</a><br/>
-			<small>05 December 2011, 2 Comments</small><br/>
-			<img alt="alt_example" src="{{ STATIC_URL }}images/stars.png" /> </div>
-		</li>
-		<li>
-		<div class="img"><a href="./post_game.html"><img alt="alt_example" src="{{ STATIC_URL }}images/media/thumb/1.jpg" /></a></div>
-		<div class="info"> <a href="./post_game.html">DayZ - Arma 2 mod</a><br/>
-			<small>05 December 2011, 2 Comments</small><br/>
-			<img alt="alt_example" src="{{ STATIC_URL }}images/stars.png" /> </div>
-		</li>
-		<li>
-		<div class="img"><a href="./post_game.html"><img alt="alt_example" src="{{ STATIC_URL }}images/media/thumb/1.jpg" /></a></div>
-		<div class="info"> <a href="./post_game.html">League of legends</a><br/>
-			<small>05 December 2011, 2 Comments</small><br/>
-			<img alt="alt_example" src="{{ STATIC_URL }}images/stars.png" /> </div>
-		</li>
-	</ul>
-</div>
+{% render_minitop10 %}
 <div class="categories">
 	<div class="header"><a href="#">Categories</a></div>
 	<ul>
