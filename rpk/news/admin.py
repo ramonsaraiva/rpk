@@ -1,3 +1,4 @@
 from django.contrib import admin
+from news.models import SliderNews
 
-# Register your models here.
+admin.site.register(SliderNews)

@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
 	'player',
+	'news',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -101,5 +102,8 @@ STATICFILES_DIRS = (
 
 STATIC_URL = '/static/'
 STATIC_ROOT = 'C:/public_html/realitypk.com/static/'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = 'C:/public_html/realitypk.com/media/'
 
 AUTHENTICATION_BACKENDS = ('django.contrib.auth.backends.ModelBackend','rpk.backends.PlayerBackend','django.contrib.auth.backends.ModelBackend',)

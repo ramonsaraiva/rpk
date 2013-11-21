@@ -1,24 +1,13 @@
 {% extends 'base_splitted.html' %}
 {% block slider %}
 <div id="da-slider" class="da-slider">
+	{% for news in slider_news %}
 	<div class="da-slide">
-		<h2><a href="#" class="da-link">For gamer by gamers</a></h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
-		Ut iaculis lorem vitae arcu elementum pellentesque. <br />
-		Praesent pellentesque ornare neque id lobortis.</p>
-		<div class="da-img"><img alt="alt_example" src="{{ STATIC_URL }}images/slider_1.png"  /></div>
+		<h2><a href="#" class="da-link">{{ news.title }}</a></h2>
+		<p>{{ news.text }}</p>
+		<div class="da-img"><img alt="alt_example" src="{{ MEDIA_URL }}{{ news.image }}"  /></div>
 	</div>
-	<div class="da-slide">
-		<h2><a href="#" class="da-link">Blade and Soul</a></h2>
-		<p>Phasellus ac leo turpis. Morbi at pulvinar augue. <br />
-		Aenean rhoncus ultrices volutpat. Vivamus eget enim ut orci iaculis condimentum sed a quam. </p>
-		<div class="da-img"><img alt="alt_example" src="{{ STATIC_URL }}images/slider_2.png"  /></div>
-	</div>
-	<div class="da-slide">
-		<h2><a href="#" class="da-link">Final Fantasy XIV</a></h2>
-		<p>Etiam eu massa lectus. Nunc mi velit, commodo ut ullamcorper et, consectetur vel dolor. Etiam tincidunt convallis metus non suscipit.</p>
-		<div class="da-img"><img alt="alt_example" src="{{ STATIC_URL }}images/slider_3.png"  /></div>
-	</div>
+	{% endfor %}
 	<div class="da-arrows"> <span class="da-arrows-prev"></span> <span class="da-arrows-next"></span> </div>
 </div>
 
