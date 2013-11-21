@@ -1,8 +1,9 @@
+from django.shortcuts import render
 from django.views.generic import TemplateView, ListView
 from player.models import Player
 
-class HomeView(TemplateView):
-	template_name = 'home.html'
+def home(request):
+	return render(request, 'home.html')
 
 class PlayerTest(ListView):
 	model = Player

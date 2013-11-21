@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+{% block slider %}{% endblock %}
+{% block rotate %}{% endblock %}
+<div id="main_news_wrapper">
+	<div id="row"> 
+		<div id="left_wrapper">
+			{% block left_wrapper %}{% endblock %}
+		</div>
+		<div id="right_wrapper">
+			{% block right_wrapper %}{% endblock %}
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+<div class="bottom_shadow"></div>
+{% endblock %}
