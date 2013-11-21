@@ -26,16 +26,19 @@ TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
+SITE_ID = 1
 
 # Application definition
 
 INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',
+	'django.contrib.sites',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+	'player',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -50,7 +53,6 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'rpk.urls'
 
 WSGI_APPLICATION = 'rpk.wsgi.application'
-
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
@@ -99,3 +101,5 @@ STATICFILES_DIRS = (
 
 STATIC_URL = '/static/'
 STATIC_ROOT = 'C:/public_html/realitypk.com/static/'
+
+AUTHENTICATION_BACKENDS = ('django.contrib.auth.backends.ModelBackend','rpk.backends.PlayerBackend','django.contrib.auth.backends.ModelBackend',)
