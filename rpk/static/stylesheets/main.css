@@ -1043,7 +1043,7 @@ ul#pager li a.active{
 	color:#999999;
 }
 .review ul li .info img {
-	margin:10px 0px 0px 0px;
+	margin-bottom: 5px;
 }
 .normal .body {
 	padding:15px 15px 15px 15px;

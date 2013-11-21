@@ -8,12 +8,11 @@
 	<ul>
 		{% for char in chars %}
 		<li>
-		<div class="img"><a href="#"><img src="{{ STATIC_PREFIX }}images/classes/{{ char.char_class }}.png" /></a></div>
+		<div class="img"><a href="#"><img src="{{ STATIC_PREFIX }}images/classes/{{ char.char_class }}.png" alt="{{ char.char_class|class_as_text }}" /></a></div>
 		<div class="info"> <a href="#"><strong>{{ char.char }}</strong></a><br/>
-			<small><i>{{ char.char_class|class_as_text }}</i></small><br/>
 			<small>Level <strong>{{ char.level }}</strong></small><br/>
-			<small><strong>{{ char.bp }}</strong> bps</small><br/>
-			<small><strong>{{ char.bp|bp_stars }}</strong> estrelas (colocar img)</small><br/>
+			<small><strong>{{ char.bp }}</strong> BPS</small><br/>
+			<small><img src="{{ STATIC_PREFIX }}images/stars/{{ char.bp|bp_stars }}.png" alt="Pontuação relacionada a média de BPs do servidor" /><br/></small>
 			<br/>
 		</li>
 		{% endfor %}
