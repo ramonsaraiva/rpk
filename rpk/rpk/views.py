@@ -4,7 +4,7 @@ from player.models import Player
 from news.models import SliderNews
 
 def home(request):
-	slider_news = SliderNews.objects.all().order_by('date', 'priority')
+	slider_news = SliderNews.objects.all().order_by('-priority', 'date')
 	context = {'slider_news': slider_news}
 	return render(request, 'home.html', context)
 

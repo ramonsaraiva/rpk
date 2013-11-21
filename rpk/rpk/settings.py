@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
 	'player',
+	'ranking',
 	'news',
 )
 
@@ -62,6 +63,13 @@ DATABASES = {
 	'player': {
 		'ENGINE': 'sqlserver_ado',
 		'NAME': 'accountdb',
+		'USER': 'sa',
+		'PASSWORD': 'admin123',
+		'HOST': r'RPK\SQLEXPRESS',
+    },
+	'clan': {
+		'ENGINE': 'sqlserver_ado',
+		'NAME': 'ClanDB',
 		'USER': 'sa',
 		'PASSWORD': 'admin123',
 		'HOST': r'RPK\SQLEXPRESS',
@@ -106,4 +114,4 @@ STATIC_ROOT = 'C:/public_html/realitypk.com/static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = 'C:/public_html/realitypk.com/media/'
 
-AUTHENTICATION_BACKENDS = ('django.contrib.auth.backends.ModelBackend','rpk.backends.PlayerBackend','django.contrib.auth.backends.ModelBackend',)
+AUTHENTICATION_BACKENDS = ('django.contrib.auth.backends.ModelBackend','rpk.backends.PlayerBackend',)
