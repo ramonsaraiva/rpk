@@ -1,15 +1,20 @@
 {% load static %}
+{% load ranking_extras %}
+{% load character_extras %}
 {% get_static_prefix as STATIC_PREFIX %}
 
 <div class="review">
-	<div class="header"><a href="#">Top 10 Arena</a></div>
+	<div class="header"><a href="#">Os 5 titãs da arena</a></div>
 	<ul>
 		{% for char in chars %}
 		<li>
 		<div class="img"><a href="#"><img src="{{ STATIC_PREFIX }}images/classes/{{ char.char_class }}.png" /></a></div>
 		<div class="info"> <a href="#"><strong>{{ char.char }}</strong></a><br/>
+			<small><i>{{ char.char_class|class_as_text }}</i></small><br/>
 			<small>Level <strong>{{ char.level }}</strong></small><br/>
-			<small><strong>{{ char.bps }}</strong> BPS</small>
+			<small><strong>{{ char.bp }}</strong> bps</small><br/>
+			<small><strong>{{ char.bp|bp_stars }}</strong> estrelas (colocar img)</small><br/>
+			<br/>
 		</li>
 		{% endfor %}
 	</ul>

@@ -5,7 +5,7 @@ class BattlePoints(models.Model):
 	char = models.CharField(db_column='ChName', max_length=50, primary_key=True)
 	level = models.IntegerField(db_column='ChLvl')
 	char_class = models.IntegerField(db_column='ChType')
-	bps = models.IntegerField(db_column='BPS')
+	bp = models.IntegerField(db_column='BPS')
 	deaths = models.IntegerField(db_column='Mortes')
 
 	class Meta:
