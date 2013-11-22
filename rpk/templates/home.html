@@ -1,5 +1,4 @@
-{% extends 'base_splitted.html' %}
-{% load ranking_extras %}
+{% extends 'splitted_with_right.html' %}
 {% block slider %}
 <div id="da-slider" class="da-slider">
 	{% for news in slider_news %}
@@ -145,20 +144,3 @@
 <div class="clear"></div>
 {% endblock %}
 
-{% block right_wrapper %}
-<div id="search">
-	<img src="{{ STATIC_URL }}images/online.png" />
-</div>
-{% render_minitop10 %}
-<div class="categories">
-	<div class="header"><a href="#">Categories</a></div>
-	<ul>
-		<li> <a href="./post_list.html">Action</a> </li>
-		<li> <a href="./post_list.html">Adventure</a> </li>
-		<li> <a href="./post_list.html">Strategy</a> </li>
-		<li> <a href="./post_list.html">RPG</a> </li>
-		<li> <a href="./post_list.html">Indie</a> </li>
-		<li> <a href="./post_list.html">Massive Multiplayer</a> </li>
-	</ul>
-</div>
-{% endblock %}

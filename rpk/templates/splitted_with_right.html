@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load ranking_extras %}
+{% block content %}
+{% block slider %}{% endblock %}
+{% block rotate %}{% endblock %}
+<div id="main_news_wrapper">
+	<div id="row"> 
+		<div id="left_wrapper">
+			{% block left_wrapper %}{% endblock %}
+		</div>
+		<div id="right_wrapper">
+			{% block right_wrapper %}
+			<div class="categories">
+				<div class="header"><a href="#">Server status</a></div>
+				<img src="{{ STATIC_URL }}images/online.png" />
+			</div>
+			{% render_minitop10 %}
+			<div class="categories">
+				<div class="header"><a href="#">Categories</a></div>
+				<ul>
+					<li> <a href="./post_list.html">Action</a> </li>
+					<li> <a href="./post_list.html">Adventure</a> </li>
+					<li> <a href="./post_list.html">Strategy</a> </li>
+					<li> <a href="./post_list.html">RPG</a> </li>
+					<li> <a href="./post_list.html">Indie</a> </li>
+					<li> <a href="./post_list.html">Massive Multiplayer</a> </li>
+				</ul>
+			</div>
+			{% endblock %}
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+<div class="bottom_shadow"></div>
+{% endblock %}
