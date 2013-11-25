@@ -15,7 +15,7 @@ def login(request):
 		user = authenticate(username=username, password=password)
 		if user:
 			auth_login(request, user)
-			return redirect('home')
+			return redirect('dashboard')
 		else:
 			error = 'Verifique as informações digitadas, não identificamos uma conta com este usuário e senha.'
 
@@ -26,6 +26,5 @@ def logout(request):
 	return redirect('home')
 
 @login_required
-def test(request):
-	players = Player.objects.using('player').all()
-	return render(request, 'test.html', {'object_list': players})
+def dashboard(request):
+	return render(request, 'player/dashboard.html')
