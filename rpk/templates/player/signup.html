@@ -1,0 +1,19 @@
+{% extends 'splitted_with_right.html' %}
+{% block left_wrapper %}
+<div class="header">
+	<h2><span>RPK //</span> <a href="{% url 'signup' %}">Cadastro</a></h2>
+</div>
+
+<div id="post_wrapper">
+	<div id="response" class="contact_form">
+		<h1>Cadastre sua conta</h1>
+		<p>Este cadastro atualmente é legado de nosso antigo sistema, estamos desenvolvendo um novo cadastro independente, que logo estará disponível. Agradecemos sua compreensão.</p>
+
+		<div class="iframe" style="width: 100%; height: 800px">
+			<iframe src="http://realitypk.com:8080/cadastro/" style="width: 90%; height: 700px; border: none">
+			</iframe>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+{% endblock %}

@@ -34,7 +34,7 @@ class Player(models.Model):
 	blockdata = models.CharField(db_column='BlockDATA', max_length=50, blank=True)
 
 	class Meta:
-		managed = False
+		managed = True
 		db_table = 'AllGameUser'
 
 	def __unicode__(self):

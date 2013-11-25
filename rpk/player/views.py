@@ -5,6 +5,12 @@ from django.contrib.auth import authenticate, login as auth_login, logout as aut
 from django.contrib.auth.decorators import login_required
 from player.models import Player
 
+def signup(request):
+	return render(request, 'player/signup.html')
+
+def panel(request):
+	return render(request, 'player/panel.html')
+
 def login(request):
 	error = ''
 
