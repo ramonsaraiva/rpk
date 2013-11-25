@@ -1,3 +1,31 @@
-from django.shortcuts import render
+# -*- coding: utf-8 -*
 
-# Create your views here.
+from django.shortcuts import render, redirect
+from django.contrib.auth import authenticate, login as auth_login, logout as auth_logout
+from django.contrib.auth.decorators import login_required
+from player.models import Player
+
+def login(request):
+	error = ''
+
+	if request.POST:
+		username = request.POST.get('username')
+		password = request.POST.get('password')
+
+		user = authenticate(username=username, password=password)
+		if user:
+			auth_login(request, user)
+			return redirect('home')
+		else:
+			error = 'Verifique as informações digitadas, não identificamos uma conta com este usuário e senha.'
+
+	return render(request, 'player/login.html', {'error': error})
+
+def logout(request):
+	auth_logout(request)
+	return redirect('home')
+
+@login_required
+def test(request):
+	players = Player.objects.using('player').all()
+	return render(request, 'test.html', {'object_list': players})

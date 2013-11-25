@@ -5,7 +5,7 @@
 	<div class="da-slide">
 		<h2><a href="#" class="da-link">{{ news.title }}</a></h2>
 		<p>{{ news.text }}</p>
-		<div class="da-img"><img alt="alt_example" src="{{ MEDIA_URL }}{{ news.image }}"  /></div>
+		<div class="da-img"><img  src="{{ MEDIA_URL }}{{ news.image }}"  /></div>
 	</div>
 	{% endfor %}
 	<div class="da-arrows"> <span class="da-arrows-prev"></span> <span class="da-arrows-next"></span> </div>
@@ -16,15 +16,15 @@
 {% block rotate %}
 <div id="hot_news">
 	<div class="header">
-		<h1><span>RPK //</span> NOTÍCIAS QUENTES</h1>
+		<h1><span>RPK //</span> DESTAQUES DA LOJA</h1>
 	</div>
 
 	<!-- Previous and next selector --> 
-	<a id="prev" class="prev" href="#"><img alt="alt_example" src="{{ STATIC_URL }}images/blank.gif" width="21" height="33" border="0" /></a> <a id="next" class="next" href="#"><img alt="alt_example" src="./images/blank.gif" width="21" height="33" border="0" /></a>
+	<a id="prev" class="prev" href="#"><img  src="{{ STATIC_URL }}images/blank.gif" width="21" height="33" border="0" /></a> <a id="next" class="next" href="#"><img  src="./images/blank.gif" width="21" height="33" border="0" /></a>
 	<ul id="hot_news_box">
 		<li>
 		<h2><a href="./post.html">Battlefield 3 expansion!</a></h2>
-		<div class="image"><a href="./post.html"><img alt="alt_example" src="{{ STATIC_URL }}images/media/full/1.jpg"/></a></div>
+		<div class="image"><a href="./post.html"><img  src="{{ STATIC_URL }}images/media/full/1.jpg"/></a></div>
 		<div class="content">
 			<p>Nam dignissim nulla mattis justo aliquet luctus. Mauris venenatis eros. Nam in leo libero. In hac habitasse platea dictumst. Phasellus aliquet aliquam sto,dignissi
 			eistoteles anarequi et son amorites etimo nurli.</p>
@@ -33,7 +33,7 @@
 		</li>
 		<li>
 		<h2><a href="./post.html">Dead space looking good</a></h2>
-		<div class="image"><a href="./post.html"><img alt="alt_example" src="{{ STATIC_URL }}images/media/full/1.jpg" /></a></div>
+		<div class="image"><a href="./post.html"><img  src="{{ STATIC_URL }}images/media/full/1.jpg" /></a></div>
 		<div class="content">
 			<p>Nam dignissim nulla mattis justo aliquet luctus. Mauris venenatis eros. Nam in leo libero. In hac habitasse platea dictumst. Phasellus aliquet aliquam sto,dignissi
 			eistoteles anarequi et son amorites etimo nurli.</p>
@@ -42,7 +42,7 @@
 		</li>
 		<li>
 		<h2><a href="./post.html">Dead space new footage</a></h2>
-		<div class="image"><a href="#"><img alt="alt_example" src="{{ STATIC_URL }}images/media/full/1.jpg" /></a></div>
+		<div class="image"><a href="#"><img  src="{{ STATIC_URL }}images/media/full/1.jpg" /></a></div>
 		<div class="content">
 			<p>Nam dignissim nulla mattis justo aliquet luctus. Mauris venenatis eros. Nam in leo libero. In hac habitasse platea dictumst. Phasellus aliquet aliquam sto,dignissi
 			eistoteles anarequi et son amorites etimo nurli.</p>
@@ -51,7 +51,7 @@
 		</li>
 		<li>
 		<h2><a href="./post.html">Owning at DayZ</a></h2>
-		<div class="image"><a href="#"><img alt="alt_example" src="{{ STATIC_URL }}images/media/full/1.jpg" /></a></div>
+		<div class="image"><a href="#"><img  src="{{ STATIC_URL }}images/media/full/1.jpg" /></a></div>
 		<div class="content">
 			<p>Nam dignissim nulla mattis justo aliquet luctus. Mauris venenatis eros. Nam in leo libero. In hac habitasse platea dictumst. Phasellus aliquet aliquam sto,dignissi
 			eistoteles anarequi et son amorites etimo nurli.</p>
@@ -60,7 +60,7 @@
 		</li>
 		<li>
 		<h2><a href="./post.html">LoL tournament </a></h2>
-		<div class="image"><a href="#"><img alt="alt_example" src="{{ STATIC_URL }}images/media/full/1.jpg" /></a></div>
+		<div class="image"><a href="#"><img  src="{{ STATIC_URL }}images/media/full/1.jpg" /></a></div>
 		<div class="content">
 			<p>Nam dignissim nulla mattis justo aliquet luctus. Mauris venenatis eros. Nam in leo libero. In hac habitasse platea dictumst. Phasellus aliquet aliquam sto,dignissi
 			eistoteles anarequi et son amorites etimo nurli.</p>
@@ -69,7 +69,7 @@
 		</li>
 		<li>
 		<h2><a href="./post.html">MOHW not as good as planned</a></h2>
-		<div class="image"><a href="#"><img alt="alt_example" src="{{ STATIC_URL }}images/media/full/1.jpg" /></a></div>
+		<div class="image"><a href="#"><img  src="{{ STATIC_URL }}images/media/full/1.jpg" /></a></div>
 		<div class="content">
 			<p>Nam dignissim nulla mattis justo aliquet luctus. Mauris venenatis eros. Nam in leo libero. In hac habitasse platea dictumst. Phasellus aliquet aliquam sto,dignissi
 			eistoteles anarequi et son amorites etimo nurli.</p>
@@ -82,65 +82,27 @@
 
 {% block left_wrapper %}
 <div class="header">
-	<h2><span>RPK //</span> GENERAL NEWS</h2>
+	<h2><span>RPK //</span> ÚLTIMAS NOTÍCIAS</h2>
 </div>
 <ul id="general_news">
+	{% for cnews in news %}
 	<li>
-	<div class="image"><a href="#"><img alt="alt_example" src="{{ STATIC_URL }}images/media/full/1.jpg" /></a></div>
+	<div class="image"><a href="#"><img  src="{{ MEDIA_URL }}{{ cnews.image }}" /></a></div>
 	<ul class="social_share">
-		<li><a href="#"><img alt="alt_example" src="{{ STATIC_URL }}images/fbk.png" border="0" /></a></li>
-		<li><a href="#"><img alt="alt_example" src="{{ STATIC_URL }}images/twitter.png" border="0" /></a></li>
-		<li><a href="#"><img alt="alt_example" src="{{ STATIC_URL }}images/more.png" border="0" /></a></li>
+		<li><a href="#"><img  src="{{ STATIC_URL }}images/fbk.png" border="0" /></a></li>
+		<li><a href="#"><img  src="{{ STATIC_URL }}images/twitter.png" border="0" /></a></li>
+		<li><a href="#"><img  src="{{ STATIC_URL }}images/more.png" border="0" /></a></li>
 	</ul>
 	<div class="info">
-		<div class="comments"> 18 </div>
-		<h2><a href="./post.html">Blade and Soul - Open beta announced!</a></h2>
-		<div class="date_n_author">12 July 2012, by Admin</div>
-		<p>Integer tincidunt tellus ut metus viverra ac sodales odio vulputate. Ut id erat neque, sit amet tristique erat. Vivamus in turpis orci, et volutpat purus. Vestibulum lacinia, arcu id varius eleifend, eros lorem iaculis massa, vitae consequat enim diam eget massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam ultrices viverra consectetur. Sed eget massa augue. Suspendisse urna lectus.</p>
-		<a href="./post.html" class="read_more2">read more</a> </div>
+		<h2><a href="#">{{ cnews.title }}</a></h2>
+		<div class="date_n_author">{{ cnews.date }}</div>
+		<p>{{ cnews.text }}</p>
+		<a href="#" class="read_more2">Leia mais</a> </div>
 	<div class="clear">
 	</div>
 	</li>
-	<li>
-	<div class="image"><a href="./post.html"><img alt="alt_example" src="{{ STATIC_URL }}images/media/full/1.jpg" /></a></div>
-	<ul class="social_share">
-		<li><a href="#"><img alt="alt_example" src="{{ STATIC_URL }}images/fbk.png" border="0" /></a></li>
-		<li><a href="#"><img alt="alt_example" src="{{ STATIC_URL }}images/twitter.png" border="0" /></a></li>
-		<li><a href="#"><img alt="alt_example" src="{{ STATIC_URL }}images/more.png" border="0" /></a></li>
-	</ul>
-	<div class="info">
-		<div class="comments"> 18 </div>
-		<h2><a href="./post.html">Raiderz item giveaway!</a></h2>
-		<div class="date_n_author">12 July 2012, by Admin</div>
-		<p>Integer tincidunt tellus ut metus viverra ac sodales odio vulputate. Ut id erat neque, sit amet tristique erat. Vivamus in turpis orci, et volutpat purus. Vestibulum lacinia, arcu id varius eleifend, eros lorem iaculis massa, vitae consequat enim diam eget massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam ultrices viverra consectetur. Sed eget massa augue. Suspendisse urna lectus.</p>
-		<a href="./post.html" class="read_more2">read more</a> </div>
-	<div class="clear"></div>
-	</li>
-	<li>
-	<div class="image"><a href="./post.html"><img alt="alt_example" src="{{ STATIC_URL }}images/media/full/1.jpg" /></a></div>
-	<ul class="social_share">
-		<li><a href="#"><img alt="alt_example" src="{{ STATIC_URL }}images/fbk.png" border="0" /></a></li>
-		<li><a href="#"><img alt="alt_example" src="{{ STATIC_URL }}images/twitter.png" border="0" /></a></li>
-		<li><a href="#"><img alt="alt_example" src="{{ STATIC_URL }}images/more.png" border="0" /></a></li>
-	</ul>
-	<div class="info">
-		<div class="comments"> 18 </div>
-		<h2><a href="./post.html">Dead Space 3 gameplay</a></h2>
-		<div class="date_n_author">12 July 2012, by Admin</div>
-		<p>Integer tincidunt tellus ut metus viverra ac sodales odio vulputate. Ut id erat neque, sit amet tristique erat. Vivamus in turpis orci, et volutpat purus. Vestibulum lacinia, arcu id varius eleifend, eros lorem iaculis massa, vitae consequat enim diam eget massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam ultrices viverra consectetur. Sed eget massa augue. Suspendisse urna lectus.</p>
-		<a href="./post.html" class="read_more2">read more</a> </div>
-	<div class="clear"></div>
-	</li>
+	{% endfor %}
 </ul>
-<ul id="pager">
-	<li><a href="#" ><img alt="alt_example" src="{{ STATIC_URL }}images/left_pager.jpg" border="0"/></a></li>
-	<li><a href="#" >1</a></li>
-	<li><a href="#">2</a></li>
-	<li><a href="#" class="active">3</a></li>
-	<li><a href="#"><img alt="alt_example" src="{{ STATIC_URL }}images/right_pager.jpg" border="0"/></a></li>
-</ul>
-
-
 <div class="clear"></div>
 {% endblock %}
 

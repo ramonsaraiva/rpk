@@ -1345,3 +1345,29 @@ a#cop_text:hover {
 	/* Opera */
 	-o-transition:all 0.35s ease-in-out;
 }
+
+a#woodoo {
+	float:right;
+	margin:15px 0px 0px 15px;
+	color:#0193ff;
+	text-decoration:none;
+	transition:all 0.35s ease-in-out;
+	/* Firefox 4 */
+	-moz-transition:all 0.35s ease-in-out;
+	/* Safari and Chrome */
+	-webkit-transition:all 0.35s ease-in-out;
+	/* Opera */
+	-o-transition:all 0.35s ease-in-out;
+}
+a#woodoo:hover {
+	margin:15px 0px 0px 20px;
+	color:#fff;
+	text-decoration:none;
+	transition:all 0.35s ease-in-out;
+	/* Firefox 4 */
+	-moz-transition:all 0.35s ease-in-out;
+	/* Safari and Chrome */
+	-webkit-transition:all 0.35s ease-in-out;
+	/* Opera */
+	-o-transition:all 0.35s ease-in-out;
+}

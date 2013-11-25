@@ -1,0 +1,31 @@
+{% extends 'splitted_with_right.html' %}
+{% block left_wrapper %}
+<div class="header">
+	<h2><span>RPK //</span> <a href="{% url 'login' %}">Acesso</a></h2>
+</div>
+
+<div id="post_wrapper">
+	<div id="response" class="contact_form">
+		<h1>Acesse sua conta</h1>
+		<p>Acessando sua conta, muitas possibiildades estarão disponíveis para você, como comprar itens diferenciados em nossa loja online, trocar suas stones do SoD por SPs (SoD Points), postar screenshots, participar de votações de diferentes personagens e muito mais.</p>
+
+		<form method="POST">
+			{% csrf_token %}
+
+			<label>Usuário</label>
+			<input name="username" type="text" />
+
+			<label>Senha</label>
+			<input name="password" type="password" />
+			{% if error %}
+			<br><font color="red">{{ error }}</font>
+			{% endif %}
+
+			<br/><br />
+			<input type="submit" value="Entrar" class="read_more2"/>
+		</form>
+
+	</div>
+	<div class="clear"></div>
+</div>
+{% endblock %}

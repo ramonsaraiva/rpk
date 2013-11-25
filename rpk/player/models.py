@@ -18,7 +18,7 @@ class Player(models.Model):
 	credit = models.CharField(db_column='Credit', max_length=1)
 	ecoin = models.TextField(db_column='ECoin', blank=True)
 	startday = models.DateTimeField(db_column='StartDay', blank=True, null=True)
-	lastday = models.DateTimeField(db_column='LastDay', blank=True, null=True)
+	last_login = models.DateTimeField(db_column='LastDay', blank=True, null=True)
 	editday = models.DateTimeField(db_column='EditDay', blank=True, null=True)
 	rno = models.IntegerField(db_column='RNo', blank=True, null=True)
 	delchk = models.CharField(db_column='DelChk', max_length=1)
@@ -39,3 +39,5 @@ class Player(models.Model):
 
 	def __unicode__(self):
 		return self.userid
+
+	def is_authenticated(self): return True
