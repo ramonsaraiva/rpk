@@ -3,25 +3,12 @@
 <div class="categories">
 	<div class="header"><a href="#">AÇÕES</a></div>
 	<ul>
-		<li> <a href="#">Início</a> </li>
-		<li> <a href="#">Acessar o Painel de Jogador</a> </li>
+		<li> <a href="{% url 'dashboard' %}">Início</a> </li>
+		<li> <a href="http://realitypk.com:8080/" target="_blank">Acessar o Painel de Jogador</a> </li>
 		<li> <a href="#">Suporte</a> </li>
 		<li> <a href="#">Survivor or Die (SoD)</a> </li>
 		<li> <a href="#">Enviar Screenshot</a> </li>
 		<li> <a href="{% url 'logout' %}">Sair</a> </li>
 	</ul>
-</div>
-{% endblock %}
-{% block left_wrapper %}
-<div class="header">
-	<h2><span>RPK //</span> <a href="{% url 'dashboard' %}">Minha conta</a></h2>
-</div>
-
-<div id="post_wrapper">
-	<div id="response" class="contact_form">
-		<h1>Olá!</h1>
-		<p>Aqui você poderá realizar qualquer integração que oferecemos com sua conta em nosso servidor, utilize o painel de ações na parte da direita para escolher o que você pretende fazer.</p>
-	</div>
-	<div class="clear"></div>
 </div>
 {% endblock %}

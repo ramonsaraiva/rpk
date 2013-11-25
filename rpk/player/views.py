@@ -27,4 +27,4 @@ def logout(request):
 
 @login_required
 def dashboard(request):
-	return render(request, 'player/dashboard.html')
+	return render(request, 'player/home.html')
